@@ -36,8 +36,9 @@ jobs:
         cat RFCbib6.log
     - name: bakeBook
       run: |
-        python3 utilities/bakeBook.py .
-        cat bakeBook.log
+        cd utilities
+        python3 bakeBook.py ..
+        cat ../bakeBook.log
     - name: check epub for errors
       run: |
         # should check for all errors once fixed
