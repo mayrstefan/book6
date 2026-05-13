@@ -14,14 +14,13 @@ jobs:
       with:
         python-version: 3.14
         cache: 'pip'
-        cache-dependency-path: utilities/requirements.txt
+        pip-install: -r utilities/requirements.txt
     - name: Install dependencies
       run: |
         sudo apt-get update && \
         sudo apt-get install --yes --no-install-recommends \
           pandoc \
-          texlive-latex-base && \
-        pip install -r utilities/requirements.txt
+          texlive-latex-base
     - name: makeBook
       run: |
         python3 utilities/makeBook.py .
