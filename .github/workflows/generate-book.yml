@@ -40,4 +40,5 @@ jobs:
         cat bakeBook.log
     - name: check epub for errors
       run: |
-        epubcheck pdf/baked.epub
+        # should check for all errors once fixed
+        epubcheck --fatal pdf/baked.epub
