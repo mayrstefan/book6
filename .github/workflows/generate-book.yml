@@ -15,7 +15,7 @@ jobs:
         cache: 'pip'
     - name: Install dependencies
       run: |
-        pip install certifi mdformat requests tk xmltodict
+        pip install certifi mdformat requests tkinter xmltodict
         sudo apt-get update
         sudo apt-get install --yes --no-install-recommends pandoc texlive-latex-base
     - name: makeBook
