@@ -1,0 +1,5 @@
+certifi
+mdformat
+requests
+tkinter
+xmltodict
