@@ -18,7 +18,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install mdformat tk xmltodict
         sudo apt-get update
-        sudo apt-get install --yes --no-install-recommends pandoc pdflatex texlive-latex-base
+        sudo apt-get install --yes --no-install-recommends pandoc texlive-latex-base
     - name: makeBook
       run: |
         python3 utilities/makeBook.py .
