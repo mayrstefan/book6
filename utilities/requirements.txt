@@ -1,5 +1,4 @@
-certifi
-mdformat
-requests
-tkinter
-xmltodict
+certifi >= 2026.4.22
+mdformat >= 1.0.0
+requests >= 2.34.1
+xmltodict >= 1.0.4
